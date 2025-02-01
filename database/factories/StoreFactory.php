@@ -18,6 +18,7 @@ class StoreFactory extends Factory
     {
         $store = $this->faker->words(2, true);
         return [
+            'tenant_id' => 1,
             'name' => $store,
             'phone' => $this->faker->phoneNumber(),
             'about' => $this->faker->paragraphs(2, true),
